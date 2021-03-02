@@ -15,7 +15,7 @@ Apps to search and adopt puppies on selected area. You can see puppies list with
 <!--- What are you especially proud of? -->
 Simple and elegant design can attract or stay users to application also they can shortlist using favorite. its support both dark and light mode depends on device settings
 
-
+Simple and elegant design can attract or stay users to application also they can shortlist using favorite.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
