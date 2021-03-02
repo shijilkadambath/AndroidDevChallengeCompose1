@@ -15,8 +15,6 @@
  */
 package com.example.androiddevchallenge.ui
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.FavoriteBorder
 import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.ItemData
 
@@ -30,34 +28,35 @@ object Constans {
     fun buildPuppyDetailPath(position: Int) = "detail/${position}"
 
 
-    val list = listOf( ItemData(
-        name = "Cinnamon",
-        image = R.drawable.puppy_1,
-        age = 9
-    ), ItemData(
-        name = "Hershey",
-        image =  R.drawable.puppy_2,
-        age = 9,
-    ), ItemData(
-        name = "Brooklyn",
-        image =  R.drawable.puppy_3,
-        age = 9,
-    ), ItemData(
-        name = "Captain",
-        image =  R.drawable.puppy4,
-        age = 9,
-    ), ItemData(
-        name = "Maximus",
-        image =  R.drawable.puppy_5,
-        age = 9,
-    ), ItemData(
-        name = "Pumpkin",
-        image =  R.drawable.puppy_6,
-        age = 9,
-    ), ItemData(
-        name = "Scrappy",
-        image =  R.drawable.puppy_7,
-        age = 9,
-    )
+    val list = listOf(
+        ItemData(
+            name = "Cinnamon",
+            image = R.drawable.puppy_1,
+            age = 9
+        ), ItemData(
+            name = "Hershey",
+            image = R.drawable.puppy_2,
+            age = 9,
+        ), ItemData(
+            name = "Brooklyn",
+            image = R.drawable.puppy_3,
+            age = 9,
+        ), ItemData(
+            name = "Captain",
+            image = R.drawable.puppy4,
+            age = 9,
+        ), ItemData(
+            name = "Maximus",
+            image = R.drawable.puppy_5,
+            age = 9,
+        ), ItemData(
+            name = "Pumpkin",
+            image = R.drawable.puppy_6,
+            age = 9,
+        ), ItemData(
+            name = "Scrappy",
+            image = R.drawable.puppy_7,
+            age = 9,
+        )
     )
 }

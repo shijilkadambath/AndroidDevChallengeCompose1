@@ -71,15 +71,15 @@ fun PuppyList(navController: NavController) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .padding( 8.dp)
+            .padding(8.dp)
     ) {
         itemsIndexed(list) { index, puppy ->
-                ItemCard(
-                    item = puppy,
-                    onClick = {
-                        navController.navigate(Constans.buildPuppyDetailPath(index))
-                    }
-                )
+            ItemCard(
+                item = puppy,
+                onClick = {
+                    navController.navigate(Constans.buildPuppyDetailPath(index))
+                }
+            )
 
 
         }
@@ -87,7 +87,7 @@ fun PuppyList(navController: NavController) {
 }
 
 @Composable
-fun Toolbar(){
+fun Toolbar() {
 
     Box(
         modifier = Modifier
@@ -105,7 +105,7 @@ fun Toolbar(){
 
         Row(
             modifier = Modifier
-                .padding(8.dp,0.dp,8.dp,0.dp),
+                .padding(8.dp, 0.dp, 8.dp, 0.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
@@ -123,8 +123,9 @@ fun Toolbar(){
         }
 
         Icon(
-            modifier = Modifier.height(20.dp)
-                .padding(10.dp,0.dp,10.dp,0.dp)
+            modifier = Modifier
+                .height(20.dp)
+                .padding(10.dp, 0.dp, 10.dp, 0.dp)
                 .align(Alignment.CenterEnd),
             imageVector = Icons.Default.Search,
             contentDescription = null,

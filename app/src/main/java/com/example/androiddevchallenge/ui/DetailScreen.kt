@@ -67,17 +67,16 @@ fun DetailsScreen(
             .background(color = MaterialTheme.colors.background)
 
     ) {
-        DetailsToolbar(navController,item)
-        DetailsImageView (item)
+        DetailsToolbar(navController, item)
+        DetailsImageView(item)
         Spacer(modifier = Modifier.requiredWidth(20.dp))
-        DetailsView (item)
+        DetailsView(item)
     }
 }
 
 
-
 @Composable
-fun DetailsToolbar(navController: NavController,item:ItemData){
+fun DetailsToolbar(navController: NavController, item: ItemData) {
     TopAppBar(
         title = {
             Text(text = item.name)
@@ -98,8 +97,9 @@ fun DetailsToolbar(navController: NavController,item:ItemData){
         elevation = 12.dp
     )
 }
+
 @Composable
-fun DetailsImageView(item:ItemData){
+fun DetailsImageView(item: ItemData) {
 
     Image(
         painter = painterResource(item.image),
@@ -112,7 +112,7 @@ fun DetailsImageView(item:ItemData){
 }
 
 @Composable
-fun DetailsView(item:ItemData){
+fun DetailsView(item: ItemData) {
     Box(
         modifier = Modifier
             .fillMaxHeight()
@@ -120,8 +120,10 @@ fun DetailsView(item:ItemData){
             .padding(10.dp),
     ) {
         Text(
-            modifier = Modifier.fillMaxWidth() .padding(start = 3.dp,end = 3.dp),
-            text =  stringResource(R.string.dummy_text, "World"),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 3.dp, end = 3.dp),
+            text = stringResource(R.string.dummy_text, "World"),
             style = MaterialTheme.typography.body2,
             color = MaterialTheme.colors.onSurface.copy(alpha = 0.60f)
         )
