@@ -91,6 +91,7 @@ fun DetailsView(item:ItemData){
             modifier = Modifier.fillMaxWidth() .padding(start = 3.dp,end = 3.dp),
             text =  stringResource(R.string.dummy_text, "World"),
             style = MaterialTheme.typography.body2,
+            color = MaterialTheme.colors.onSurface.copy(alpha = 0.60f)
         )
         Button(
             modifier = Modifier
