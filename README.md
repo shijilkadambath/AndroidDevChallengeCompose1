@@ -1,12 +1,24 @@
 # Put title of your app here
 
+<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
+<!--- You can find both of these in the url bar when you open your repository in github. -->
 ![Workflow result](https://github.com/shijilkadambath/AndroidDevChallengeCompose1/workflows/Check/badge.svg)
 
 
 
 ## :scroll: Description
+<!--- Describe your app in one or two sentences -->
+Apps to search and adopt puppies on selected area. You can see puppies list with pics and basic details, and full details on details page.
+
+App provide an options to search and change selected geo area 
 
 ## :bulb: Motivation and Context
+<!--- Optionally point readers to interesting parts of your submission. -->
+<!--- What are you especially proud of? -->
+Simple and elegant design can attract or stay users to application also they can shortlist using favorite.
+
+its support both dark and light mode depends on device settings
+
 
 
 ## :camera_flash: Screenshots
