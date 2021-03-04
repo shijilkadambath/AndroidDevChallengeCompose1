@@ -17,25 +17,24 @@ package com.example.androiddevchallenge.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.layout.requiredWidth
-
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.Box
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.TopAppBar
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.IconButton
-import androidx.compose.material.Button
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -68,7 +67,6 @@ fun DetailsScreen(
     }
 }
 
-
 @Composable
 fun DetailsToolbar(navController: NavController, item: ItemData) {
     TopAppBar(
@@ -76,10 +74,12 @@ fun DetailsToolbar(navController: NavController, item: ItemData) {
             Text(text = item.name)
         },
         navigationIcon = {
-            IconButton(onClick = {
-                navController.popBackStack()
-            }) {
-                //Icon(Icons.Filled.Menu)
+            IconButton(
+                onClick = {
+                    navController.popBackStack()
+                }
+            ) {
+                // Icon(Icons.Filled.Menu)
                 Icon(
                     imageVector = Icons.Filled.ArrowBack,
                     contentDescription = null

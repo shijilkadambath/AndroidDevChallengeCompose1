@@ -15,12 +15,8 @@
  */
 package com.example.androiddevchallenge.model
 
-import androidx.compose.ui.graphics.vector.ImageVector
-
 data class ItemData(
     val name: String,
     val image: Int,
     val age: Int
 )
-
-

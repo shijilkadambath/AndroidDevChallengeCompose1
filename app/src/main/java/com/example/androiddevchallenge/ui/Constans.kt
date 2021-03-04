@@ -18,42 +18,46 @@ package com.example.androiddevchallenge.ui
 import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.ItemData
 
-
 object Constans {
     const val NAV_LIST = "list"
 
     const val NAV_DETAIL_ARG = "position"
     const val NAV_DETAIL = "detail/{$NAV_DETAIL_ARG}"
 
-    fun buildPuppyDetailPath(position: Int) = "detail/${position}"
-
+    fun buildPuppyDetailPath(position: Int) = "detail/$position"
 
     val list = listOf(
         ItemData(
             name = "Cinnamon",
             image = R.drawable.puppy_1,
             age = 9
-        ), ItemData(
+        ),
+        ItemData(
             name = "Hershey",
             image = R.drawable.puppy_2,
             age = 9,
-        ), ItemData(
+        ),
+        ItemData(
             name = "Brooklyn",
             image = R.drawable.puppy_3,
             age = 9,
-        ), ItemData(
+        ),
+        ItemData(
             name = "Captain",
             image = R.drawable.puppy4,
             age = 9,
-        ), ItemData(
+        ),
+        ItemData(
             name = "Maximus",
             image = R.drawable.puppy_5,
             age = 9,
-        ), ItemData(
+        ),
+        ItemData(
             name = "Pumpkin",
             image = R.drawable.puppy_6,
             age = 9,
-        ), ItemData(
+        ),
+        ItemData(
             name = "Scrappy",
             image = R.drawable.puppy_7,
             age = 9,
